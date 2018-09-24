@@ -1,0 +1,116 @@
+/*
+ clean titles for all caps
+*/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+      text-transform: none;
+}
+
+
+footer {
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    left: 1rem;
+    bottom: 0px;
+    z-index: 31;
+    font-size: 12px;
+    line-height: 1;
+}
+
+/*
+add class for column layout
+ref: https://stackoverflow.com/questions/30861845/how-to-use-two-column-layout-with-reveal-js
+
+use with html:
+<div class="container">
+
+<div class="col">
+Column 1 Content
+</div>
+
+<div class="col">
+Column 2 Content
+</div>
+
+</div>
+*/
+.container{
+    display: flex;
+    width: 100%;
+}
+.col{
+    flex: 1;
+}
+/***********************************************/
+
+/* images
+- remove frame by default
+- add light frame upon request
+*/
+.framed {
+    border: 1px solid #bfbfbf !important;
+}
+
+img {
+    border: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+/*
+add reference below image
+*/
+.slides .ref {
+    font-size: 15px;
+    margin-top: -40px;
+    color: #999999;
+}
+
+.ref a:visited, .ref a:link {
+    color: #999999;
+}
+
+/***********************************************/
+.slides .credit:before {
+    content: "Credit: ";
+}
+
+.slides .credit {
+    position:fixed;
+    left: 20%;
+    bottom: -5px;
+    z-index: 32;
+    font-size: 12px;
+}
+
+.slides pre code mark {
+    color:red!important;
+    background-color: none !important;
+}
+/***********************************************
+print settings
+*/
+@media print {
+    footer {
+        left: auto;
+        right: 1rem;
+    }
+    footer p {
+        font-size: 8pt !important;
+        font-style: italic;
+    }
+    footer a:link {
+        text-decoration: none;
+        font-weight: normal;
+    }
+    .slides .credit {
+        position: relative;
+        top: 10px;
+        left: 1%;
+    }
+}

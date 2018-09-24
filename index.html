@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Python et vous</title>
+
+		<link rel="stylesheet" href="assets/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="assets/reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="assets/reveal.js/lib/css/zenburn.css">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/reveal.js/css/print/pdf.css' : 'assets/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown
+         data-separator="^---"
+		 data-separator-notes="^Notes:">
+<textarea data-template>
+
+# Python et vous
+
+<img src="assets/img/snakes_indiana_jones.gif"
+	 height="450px">
+</img>
+
+<div style="font-size:1.5rem;margin-top:-20px;">
+Pierre Poulain [[@pierrepo](https://twitter.com/pierrepo)] ~ 21/09/2018
+</div>
+
+---
+
+# Python 2.x is over !
+
+<iframe id="python 2.7 countdown"
+    title="python 2.7 countdown"
+    width="900"
+    height="200"
+    src="https://pythonclock.org/">
+</iframe>
+
+---
+
+# Git et GitHub
+
+<img src="assets/img/PhD_Comics__Final.doc__1531__20121212.gif"
+	 height="500px" style="margin-top:-20px;">
+</img>
+<div class="ref">
+	<http://phdcomics.com/comics/archive.php?comicid=1531>
+</div>
+
+---
+
+### Débuter avec Git et Github en 30 min
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hPfgekYUKgk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="ref" style="margin-top:-20px;">
+	<https://www.youtube.com/watch?v=hPfgekYUKgk>
+</div>
+
+<div class="fragment" style="font-size:1.8rem;margin-top:70px;">
+D'autres ressources pour débuter : <http://cupnet.net/git-github/>
+</div>
+---
+
+## Attention aux environnements !
+
+<img src="assets/img/XKCD_Python_environment__1987__CC-BY-NC.png"
+	 height="500px"
+	 style="margin-top:-20px;">
+</img>
+<div class="ref">
+	<https://xkcd.com/1987/>
+</div>
+
+pip & PyPI / virtualenv / pipenv / (ana)conda
+
+---
+
+# Les communautés locales
+
+---
+
+## PyData Paris Meetup
+
+<https://www.meetup.com/PyData-Paris/>
+
+<img src="assets/img/PyData_Paris_Meetup.png"
+	 height="400px">
+</img>
+
+prochain meetup : 08/10/2018
+
+---
+
+## PyParis
+
+<http://pyparis.org/>
+
+<img src="assets/img/PyParis_conf.png"
+	 height="400px">
+</img>
+
+---
+
+# Les communautés plus lointaines
+
+---
+
+- PyCon (Cleveland, 01-09/05/2019) <br />
+	<https://us.pycon.org/2019/>
+
+- PyCon FR (Lille, 4-7/10/2018) <br />
+	<https://www.pycon.fr/2018/>
+
+- Europython (Edinburgh, 23-23/07/2018) <br />
+	<https://ep2018.europython.eu/en/>
+
+- JupyterCon (New York, 22-24/08/2018) <br />
+	<https://conferences.oreilly.com/jupyter/jup-ny>
+
+<div class="fragment">
+	La plupart des présentations sont sur
+	<img src="assets/img/YouTube_logo.png"
+		 height="100px"
+		 style="vertical-align:middle">
+	</img>
+</div>
+---
+
+# Ressources en ligne
+
+---
+
+## Stackoverflow
+
+<img src="assets/img/stackoverflow_prediction.png"
+	 height="550px"
+	 style="margin-top:-10px;">
+</img>
+<div class="ref">
+	<https://stackoverflow.blog/2017/09/06/incredible-growth-python/>
+</div>
+
+---
+
+## Real Python
+
+<img src="assets/img/Real_Python.png"
+	 height="450px">
+</img>
+
+<https://realpython.com/>
+
+---
+
+# À vous !
+
+<img src="assets/img/schwarzy.gif"
+	 height="500px">
+</img>
+
+</textarea>
+</section>
+			</div>
+		</div>
+
+		<footer>
+            <p>
+            	This content is licensed under
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY 4.0</a>.
+            </p>
+        </footer>
+
+		<script src="assets/reveal.js/lib/js/head.min.js"></script>
+		<script src="assets/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				// Display the page number of the current slide
+				slideNumber: true,
+				// Push each slide change to the browser history
+				history: true,
+
+				dependencies: [
+					{ src: 'assets/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'assets/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'assets/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/reveal.js/plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
